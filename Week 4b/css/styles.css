@@ -1,0 +1,46 @@
+img{
+    width: 100%;
+}
+
+.bg{
+    background-color: whitesmoke;
+}
+code{
+    padding: 2px 4px;
+    font-size: 50%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+}
+
+.monthPre{
+ color: gray;
+ text-align: center;
+}
+
+.monthNow{
+ color: blue;
+ text-align: center;
+}
+
+.dayNow{
+ border: 2px solid black;
+ color: #FF0000;
+ text-align: center;
+}
+
+.calendar td {
+ htmlContent: 2px;
+ width: 40px;
+}
+
+.monthNow th {
+ background-color: lightgrey;
+ color: black;
+ text-align: center;
+}
+
+.dayNames {
+ background: black;
+ color: #FFFFFF;
+ text-align: center;
+}
