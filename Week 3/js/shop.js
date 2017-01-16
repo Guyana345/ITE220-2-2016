@@ -1,5 +1,5 @@
 var customerName = "Taf";
-var price = "10";
+var price = 10;
 var quantity = 2;
 var totalPrice = price * quantity;
 
