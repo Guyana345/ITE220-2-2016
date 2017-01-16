@@ -5,3 +5,5 @@ var totalPrice = price * quantity;
 
 var customerElement = document.getElementById("sp");
 customerElement.textContent = customerName;
+var priceElement = document.getElementById("dollar");
+priceElement.textContent = price;
