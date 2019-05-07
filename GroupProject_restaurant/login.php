@@ -22,7 +22,6 @@
     <link href="css/main.css" type="text/css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/swipebox.css">
-    <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
     <!-- //Custom CSS files -->
     <!-- font-awesome icons -->
     <link href="css/font-awesome.css" rel="stylesheet">
@@ -49,32 +48,45 @@
         });
     </script>
     <!-- //end-smooth-scrolling -->
+     <style media="screen">
+	    .bann {
+	        min-height: 780px;
+	        background: url(./images/bg-lg.jpg)no-repeat center 0px;
+	        background-size: cover;
+	        position: relative;
+	        margin-bottom: 35px;
+	        -webkit-filter: brightness(80%);
+        	filter: brightness(80%);
+	        color: white;
+
+    }
+    </style>
 </head>
 
 <body>
 
   <!-- banner -->
-  <div class="banner">
+  <div class="bann">
       <div class="header">
           <!-- header -->
           <div class="container">
               <nav class="navbar navbar-default">
                   <div class="navbar-header">
                       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-                      <h1><a  href="index.php">Mustang</a></h1>
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			          </button>
+                      <h1><a  href="index.html">Mustang</a></h1>
                   </div>
                   <!-- navbar-header -->
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                       <ul class="nav navbar-nav navbar-right">
-                          <li><a href="index.php" class="active">Home</a></li>
+                          <li><a href="index.php">Home</a></li>
                           <li><a href="about.php">About</a></li>
                           <li><a href="contact.php">Contact Us</a></li>
-                          <!-- <li><a href="login.php">Login</a></li> -->
+                          <li><a href="Login1.php">Login</a></li>
                       </ul>
                       <div class="clearfix"> </div>
                   </div>
@@ -84,38 +96,46 @@
       <!-- //header -->
       <!-- banner-text -->
       <div class="banner-text">
-          <div class="flexslider">
+
+
               <ul class="slides">
                   <li>
-                      <h2>AMAZING  </h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipi est Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias phasellus mattis tellus .</p>
-                      <a href="#contact" class="more scroll">Book a Table</a>
+                      <h2 class="agile-title">Member Login</h2>
+                      <div class="container">
+						<div class="row">
+							<div class="wrap-login col-md-4 col-md-offset-4">
+									<h1 class="text-center" style="margin-bottom:30px;"></h1>
+
+									<form action="loginAction.php" method="POST">
+
+										<div class="form-group">
+											<label for="Username">Username</label>
+											<input type="text" class="form-control" id="Username" placeholder="Username" name="username"/>
+										</div>
+
+											  <div class="form-group">
+											    <label for="Password">Password</label>
+											    <input type="password" class="form-control" id="Password" placeholder="Password" name="password"/>
+											  </div>
+
+										<div class="checkbox">
+											<label>
+										  		<input type="checkbox"> Remember me
+										  	</label>
+										</div>
+
+				 						<button type="submit" class="btn-login btn btn-block btn-primary">Login</button>
+									</form>
+									<button type="submit" class="btn-login btn btn-block btn-warning" id="btn2" onClick=location.href="signup.php'" style='margin-top:10px;'>Sign up</button>
+							</div>
+						</div>
+						</div>
                   </li>
-                  <li>
-                      <h3>GRILLING</h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipi est Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias phasellus mattis tellus .</p>
-                      <a href="#contact" class="more scroll">Book a Table</a>
-                  </li>
-                  <li>
-                      <h3>RECIPES </h3>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipi est Itaque earum rerum hic tenetur a sapiente delectus reiciendis maiores alias phasellus mattis tellus .</p>
-                      <a href="#contact" class="more scroll">Book a Table</a>
-                  </li>
+
               </ul>
-          </div>
-          <!-- FlexSlider -->
-          <script defer src="js/jquery.flexslider.js"></script>
-          <script type="text/javascript">
-              $(window).load(function() {
-                  $('.flexslider').flexslider({
-                      animation: "slide",
-                      controlsContainer: $(".custom-controls-container"),
-                      customDirectionNav: $(".custom-navigation a")
-                  });
-              });
-          </script>
-          <!-- //FlexSlider -->
+
       </div>
       <!-- //banner-text -->
   </div>
-  <!-- //banner -->
+  </body>
+  </html>
